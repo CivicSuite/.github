@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 590" role="img" aria-labelledby="title desc">
+  <title id="title">CivicSuite city-core architecture</title>
+  <desc id="desc">The Windows desktop app connects to five municipal workflow modules through CivicCore, which connects to city-controlled data, files, and local AI.</desc>
+  <defs>
+    <style>
+      .label{font:700 18px Inter,Segoe UI,sans-serif;fill:#1a2330}.small{font:600 13px Inter,Segoe UI,sans-serif;fill:#3a4554}.tiny{font:700 11px Consolas,monospace;fill:#6b7280;letter-spacing:1px}.line{stroke:#8a6a1f;stroke-width:2;fill:none}.dash{stroke:#cabe9f;stroke-width:1.5;stroke-dasharray:5 5;fill:none}.box{fill:#fff;stroke:#cabe9f;stroke-width:1.5}.core{fill:#1a3a52;stroke:#1a3a52;stroke-width:1.5}.coretext{font:700 20px Inter,Segoe UI,sans-serif;fill:#fff}.coresmall{font:500 12px Inter,Segoe UI,sans-serif;fill:#dce7ef}.local{fill:#f5edd6;stroke:#8a6a1f;stroke-width:1.5}.app{fill:#e6edf3;stroke:#1a3a52;stroke-width:1.5}
+    </style>
+  </defs>
+  <text x="430" y="26" text-anchor="middle" class="tiny">CITY-CONTROLLED RUNTIME</text>
+  <rect x="250" y="52" width="360" height="70" rx="4" class="app"/>
+  <text x="430" y="82" text-anchor="middle" class="label">CivicSuite Windows Local</text>
+  <text x="430" y="104" text-anchor="middle" class="small">Tauri / WebView2 desktop app</text>
+  <path d="M430 122v50" class="line"/>
+  <path d="M125 205H735" class="dash"/>
+  <path d="M125 205v27M278 205v27M430 205v27M583 205v27M735 205v27" class="dash"/>
+  <rect x="52" y="232" width="146" height="70" rx="4" class="box"/>
+  <rect x="205" y="232" width="146" height="70" rx="4" class="box"/>
+  <rect x="357" y="232" width="146" height="70" rx="4" class="box"/>
+  <rect x="510" y="232" width="146" height="70" rx="4" class="box"/>
+  <rect x="662" y="232" width="146" height="70" rx="4" class="box"/>
+  <text x="125" y="263" text-anchor="middle" class="label">Records</text><text x="125" y="284" text-anchor="middle" class="small">requests + drafts</text>
+  <text x="278" y="263" text-anchor="middle" class="label">Meetings</text><text x="278" y="284" text-anchor="middle" class="small">agendas + minutes</text>
+  <text x="430" y="263" text-anchor="middle" class="label">Code</text><text x="430" y="284" text-anchor="middle" class="small">ordinance access</text>
+  <text x="583" y="263" text-anchor="middle" class="label">Notices</text><text x="583" y="284" text-anchor="middle" class="small">publications</text>
+  <text x="735" y="263" text-anchor="middle" class="label">Access</text><text x="735" y="284" text-anchor="middle" class="small">review + export</text>
+  <path d="M125 302v42M278 302v42M430 302v42M583 302v42M735 302v42M125 344H735" class="dash"/>
+  <path d="M430 344v28" class="line"/>
+  <rect x="240" y="372" width="380" height="88" rx="4" class="core"/>
+  <text x="430" y="410" text-anchor="middle" class="coretext">CivicCore</text>
+  <text x="430" y="437" text-anchor="middle" class="coresmall">identity · audit · retention · ingest · search · task queue</text>
+  <path d="M430 460v43M140 503H720M140 503v24M430 503v24M720 503v24" class="line"/>
+  <rect x="40" y="527" width="200" height="48" rx="4" class="local"/><text x="140" y="556" text-anchor="middle" class="small">PostgreSQL + pgvector</text>
+  <rect x="330" y="527" width="200" height="48" rx="4" class="local"/><text x="430" y="556" text-anchor="middle" class="small">City files + backups</text>
+  <rect x="620" y="527" width="200" height="48" rx="4" class="local"/><text x="720" y="556" text-anchor="middle" class="small">Local Ollama + model</text>
+</svg>
